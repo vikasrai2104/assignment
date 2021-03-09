@@ -26,6 +26,7 @@
       margin-right: 20px;
       text-align: center;
       color: red;
+      display: none;
     }
     .nav-link:hover{
         background-color: black;
@@ -63,7 +64,12 @@
       body {
         background-color: lightblue;
       }
-    
+      nav ul .nav-item {
+          display: block;
+          padding: 20px;
+          border-bottom: 1px solid red;
+          width: 100%;
+      }
   
       .card {
 
@@ -90,7 +96,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item active .d-lg-none .d-xl-block">
           <a class="nav-link" href="#chicken"><i class="fa fa-cutlery"></i> Chicken <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
